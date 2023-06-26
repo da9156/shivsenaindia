@@ -1,41 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shivsena</title>
-  <link rel="stylesheet" href="Css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shivsena</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="image/shivsenaSymbol.png">
+    <link rel="stylesheet" href="Css/slide.css">
+    <link rel="stylesheet" href="Css/contact.css">
 </head>
 
 <body>
-  <nav class="navbar">
-    <a href="index.html" class="nav-logo-img">
-      <img src="image/shivShenaLogo.png" alt="logo">
-    </a>
-    <a class="shivsena-text">शिवसेना India</a>
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="#Our">Our M.Ps</a>
-      <a href="#Media">Media</a>
-      <a href="contact.html">Contact us</a>
-    </div>
-    <div class="nav-button">
-      <span><a href="form.html">Join Shivsena</a></span>
-    </div>
-  </nav>
-  <!-- Navbar End -->
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-orange">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">
+                <img src="image/shivShenaLogo.png" alt="logo" height="80" width="80">
+                <span class="shivsena-text">शिवसेना India</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourmp.html">Our M.Ps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                    <div class="nav-item">
+                        <a class="nav-link btn btn-primary" href="form.html">Join Shivsena</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link btn btn-primary" href="donation.html">Make a Donation</a>
+                    </div>
+                </ul>
+            </div>
+    </nav>
+    <!-- Navbar End -->
   <!-- Contact Form -->
   <div class="input-box">
-    <div class="container">
+    <div class="container-con">
       <div class="title">Get IN Touch With US !</div>
       <div class="content">
         <form action="connect.php" method="post">
           <div class="user-details">
 
             <div class="input-box">
-              <span class="details">Name</span>
+              <span class="details">Full Name</span>
               <input type="text" name="Name" placeholder="Enter your name" required>
             </div>
 
@@ -73,8 +97,8 @@
               </div>
             </div>
 
-            <div class="input-box">
-              <span class="details">About You</span>
+            <div class="input-box-ms">
+              <span class="details-ms">About You</span>
             </div><textarea name="About" id="" cols="80" rows="4"></textarea>
           </div>
 
@@ -86,53 +110,74 @@
       </div>
     </div>
   </div>
+  <!-- Contact Form End -->
 
-  <!-- Footer  -->
-  <footer>
-    <div class="footer-container">
-      <div class="footerimg">
-        <img src="image/shivShenaLogo.png" alt="">
+  <!-- Footer -->
+  <footer class="text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <h3>The Party</h3>
+          <ul class="list-unstyled">
+            <li><a target="_blank" href="https://rb.gy/5glkd">History of Shivshena</a></li>
+            <li><a href="">Our Ideology</a></li>
+            <li><a href="">Our Ministers in Maharashtra Government</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h3>Leadership</h3>
+          <ul class="list-unstyled">
+            <li><a href="balasahebstory.html">Balashaheb Thackeray Ji</a></li>
+            <li><a href="ananddighe.html">Anand Dighe Ji</a></li>
+            <li><a href="eknathshinde.html">Eknath Shinde Ji</a></li>
+            <li><a href="rahulshewale.html">Rahul Shewale Ji</a></li>
+            <li><a href="anandraoadsul.html">Anandrao Adsul Ji</a></li>
+            <li><a href="drshrikant.html">Shrikant Shinde Ji</a></li>
+            <li><a href="abhijit.html">Abhijit Adsul Ji</a></li>
+            <li><a href="anshuman.html">Anshuman Joshi Ji</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h3>Media Resource</h3>
+          <ul class="list-unstyled">
+            <li><a href="">Press Releases</a></li>
+            <li><a href="">Photo Gallery</a></li>
+            <li><a href="">Video Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h3>Documents</h3>
+          <ul class="list-unstyled">
+            <li><a href="constitution.html">Constitution</a></li>
+          </ul>
+        </div>
       </div>
       <div class="row">
-        <div class="column">
-          <h3>The Party</h3>
-          <li><a class="column-text" href="">Histoey of Shivshena</a></li>
-          <li><a class="column-text" href="">Our Ideology</a></li>
-          <li><a class="column-text" href="">Our Ministers in Maharashtra Government</a></li>
+        <div class="col-12">
+          <div class="text-center">
+            <img src="image/shivShenaLogo.png" alt="Shivshena Logo" width="100">
+          </div>
+          <div class="copy-text text-center mt-3">
+            <p>Shivsena India | &#169; 2023</p>
+          </div>
         </div>
-
-        <div class="column">
-          <h3>Leadership</h3>
-          <li><a class="column-text" href="balasahebstory.html">Balashaheb Thackeray Ji</a></li>
-          <li><a class="column-text" href="ananddighe.html">Anand Dighe Ji</a></li>
-          <li><a class="column-text" href="eknathshinde.html">Eknath Shinde Ji</a></li>
-          <li><a class="column-text" href="rahulshewale.html">Rahul Shewale Ji</a></li>
-          <li><a class="column-text" href="anandraoadsul.html">Anandrao Adsul Ji</a></li>
-          <li><a class="column-text" href="drshrikant.html">Shrikant Shinde Ji</a></li>
-          <li><a class="column-text" href="abhijit.html">Abhijit Adsul Ji</a></li>
-          <li><a class="column-text" href="anshuman.html">Anshuman Joshi Ji</a></li>
-
-        </div>
-
-        <div class="column">
-          <h3>Media Resource</h3>
-          <li><a class="column-text" href="">Press Releases</a></li>
-          <li><a class="column-text" href="">Photo Gallery</a></li>
-          <li><a class="column-text" href="">Video Gallery</a></li>
-        </div>
-
-        <div class="column">
-          <h3>Documents</h3>
-          <li><a class="column-text" href="constitution.html">Constitution</a></li>
-        </div>
-
       </div>
     </div>
-
-
   </footer>
+
   <!-- Footer End -->
 
+  <!-- Bootstrap JS -->
+  <script src="JavaScript/slide.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
