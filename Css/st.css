@@ -1,0 +1,62 @@
+/* Custom CSS */
+body {
+    background-color: #fafafa;
+}
+
+.row .st-img img {
+    border: 5px #d74f12 solid;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background-color: #111;
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 1px;
+    width: 95%;
+    max-width: 255px;
+    background-color: #333;
+}
+h1, h3{
+    padding: 20px;
+}
+p{
+    padding: 20px;
+    text-align: justify;
+}
+.content {
+    text-align: justify;
+    padding: 10px;
+    margin: 2px 0px;
+}
+
+.story-btn {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .row .st-img img {
+        width: 90%;
+    }
+}
