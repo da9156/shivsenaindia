@@ -1,0 +1,96 @@
+.containerr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FF6634;
+    display: flex;
+    z-index: 50;
+    transition: all 1s ease-in-out;
+    transform: translateX(140%);
+    animation-name: shivsena;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.boxx {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.containerr .boxx .box-img {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    animation-name: initialLoading;
+    animation-duration: 2s;
+}
+
+.final-img {
+    display: block;
+    width: 250px;
+    height: 9%;
+    margin-left: -55%;
+    padding: 0;
+    margin-top: 30px;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    animation-name: welcome;
+    animation-duration: 5s;
+}
+
+.containerr.active {
+    transform: translateX(0%);
+}
+
+.containerr.active .box-img {
+    opacity: 1;
+}
+
+.containerr.active .final-img {
+    opacity: 0;
+}
+
+@keyframes shivsena {
+    0% {
+        transform: translate(0%);
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    100% {
+        top: 0px;
+        left: 110%;
+        transform: translate(100%)
+    }
+}
+
+@keyframes welcome {
+    0% {
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    100% {
+        top: 0px;
+        left: 110%;
+        transform: translate(400%)
+    }
+}
+
+@keyframes initialLoading {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}

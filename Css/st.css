@@ -38,7 +38,7 @@ body {
     max-width: 255px;
     background-color: #333;
 }
-h1, h3{
+.title-text{
     padding: 20px;
 }
 p{

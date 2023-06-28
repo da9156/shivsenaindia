@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <link rel="icon" type="image/x-icon" href="image/shivsenaSymbol.png">
     <link rel="stylesheet" href="Css/slide.css">
+    <link rel="stylesheet" href="Css/animation.css">
 </head>
 
 <body>
@@ -33,9 +34,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="ourmp.html">Our M.Ps</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="media.html">Media</a>
-                    </li>
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Media
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Press Releases</a>
+                            <a class="dropdown-item" href="photogallery.html">Photo Gallery</a>
+                            <a class="dropdown-item" href="media.html">Video Gallery</a>
+                        </div>
+                        <!-- dropdown -->
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact us</a>
                     </li>
@@ -50,6 +60,15 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Starting Animation -->
+    <div class="containerr">
+        <div class="boxx">
+            <img class="box-img" src="image/initialLoading.png" alt="">
+            <img src="image/finalArrow.png" class="final-img" alt="arrow">
+        </div>
+    </div>
+    <!-- Animation End -->
 
     <!-- slideshow -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -187,7 +206,7 @@
                     <ul class="list-unstyled">
                         <li><a target="_blank" href="https://rb.gy/5glkd">History of Shivshena</a></li>
                         <li><a href="#">Our Ideology</a></li>
-                        <li><a href="#">Our Ministers in Maharashtra Government</a></li>
+                        <li><a href="ministers.html">Our Ministers in Maharashtra Government</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -207,8 +226,8 @@
                     <h3>Media Resource</h3>
                     <ul class="list-unstyled">
                         <li><a href="#">Press Releases</a></li>
-                        <li><a href="#">Photo Gallery</a></li>
-                        <li><a href="#">Video Gallery</a></li>
+                        <li><a href="photogallery.html">Photo Gallery</a></li>
+                        <li><a href="media.html">Video Gallery</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -224,7 +243,7 @@
                         <img src="image/shivShenaLogo.png" alt="Shivshena Logo" width="100">
                     </div>
                     <div class="copy-text text-center mt-3">
-                        <p>Shivsena India | &#169; 2023</p>
+                        <h4 class="copy-text">Shivsena India | &#169; 2023</h4>
                     </div>
                 </div>
             </div>
