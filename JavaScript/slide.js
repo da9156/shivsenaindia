@@ -1,10 +1,31 @@
 $(document).ready(function() {
-    // Initialize the carousel
     $('#carouselExampleIndicators').carousel();
-  
-    // Set the interval for slide transitions (0.1 second)
+
     setInterval(function() {
       $('#carouselExampleIndicators').carousel('carousel-control-next');
-    }, 100);
+    }, 1000);
   });
   
+
+function openNav(){
+    document.getElementById("sidenav").style.width = "250px";
+}
+function closeNav(){
+    document.getElementById("sidenav").style.width = "0";
+}
+
+  // Sticky Navigation Menu JS Code
+  let nav = document.querySelector("nav");
+  let scrollBtn = document.querySelector(".scroll-button a");
+  console.log(scrollBtn);
+  let val;
+  window.onscroll = function() {
+    if(document.documentElement.scrollTop > 20){
+      nav.classList.add("sticky");
+      scrollBtn.style.display = "block";
+    }else{
+      nav.classList.remove("sticky");
+      scrollBtn.style.display = "none";
+    }
+  
+  }
