@@ -7,10 +7,12 @@
     <title>Shivsena</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="image/shivsenaSymbol.png">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="Css/slide.css">
     <link rel="stylesheet" href="Css/photogallery.css">
 
@@ -19,7 +21,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-orange">
+    <nav class="navbar navbar-expand-lg navbar-light bg-orange" id="home">
         <div class="container">
 
             <a href="index.html" class="navbar-brand">
@@ -45,7 +47,7 @@
                             Media
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Press Releases</a>
+                            <a class="dropdown-item" href="PressReleases.html">Press Releases</a>
                             <a class="dropdown-item" href="photogallery.html">Photo Gallery</a>
                             <a class="dropdown-item" href="media.html">Video Gallery</a>
                         </div>
@@ -64,7 +66,6 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
     <!-- sidenav -->
     <div class="mysidenav" id="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -80,7 +81,7 @@
                 Media
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Press Releases</a>
+                <a class="dropdown-item" href="PressReleases.html">Press Releases</a>
                 <a class="dropdown-item" href="photogallery.html">Photo Gallery</a>
                 <a class="dropdown-item" href="media.html">Video Gallery</a>
             </div>
@@ -96,7 +97,12 @@
         </div>
     </div>
     <!-- sidenav end -->
-    <h2 class="title">Photo Gallery</h2>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+        <a href="#home" style="display: block;"><i class="gg-arrow-up"></i></a>
+    </div>
+
+    <h2 class="center">Photo Gallery</h2>
     <!-- gallery -->
     <section class="gallery-class">
         <div class="image-gallery">
@@ -255,10 +261,12 @@
                     </div>
                 </div>
             </div>
+
             <div class="clearfix"></div>
         </div>
     </section>
     <!-- gallery end -->
+
 
     <!-- Bootstrap JS -->
     <script src="JavaScript/share.js"></script>

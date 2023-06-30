@@ -12,14 +12,21 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up.css' rel='stylesheet'>
     <link rel="stylesheet" href="Css/slide.css">
     <link rel="stylesheet" href="Css/animation.css">
+    <link rel="stylesheet" href="Css/imageGallery.css">
+
+    <!-- cdn -->
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- cdn end -->
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-orange">
+    <nav class="navbar navbar-expand-lg navbar-light bg-orange" id="home">
         <div class="container">
-            
+
             <a href="index.html" class="navbar-brand">
                 <img src="image/shivShenaLogo.png" alt="logo" height="80" width="80">
                 <span class="shivsena-text">शिवसेना India</span>
@@ -36,18 +43,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="ourmp.html">Our M.Ps</a>
                     </li>
-                    
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Media
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Press Releases</a>
+                            <a class="dropdown-item" href="PressReleases.html">Press Releases</a>
                             <a class="dropdown-item" href="photogallery.html">Photo Gallery</a>
                             <a class="dropdown-item" href="media.html">Video Gallery</a>
                         </div>
-                    </li>   
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact us</a>
                     </li>
@@ -72,12 +79,12 @@
             <a class="nav-link" href="ourmp.html">Our M.Ps</a>
         </div>
         <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Media
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Press Releases</a>
+                <a class="dropdown-item" href="PressReleases.html">Press Releases</a>
                 <a class="dropdown-item" href="photogallery.html">Photo Gallery</a>
                 <a class="dropdown-item" href="media.html">Video Gallery</a>
             </div>
@@ -182,7 +189,8 @@
     <!-- slideshow End -->
 
     <!-- Image Gallery -->
-    <section class="gallery-class">
+    <h3 class="event-center">Events</h3>
+    <section>
         <div class="image-gallery">
             <div class="responsive">
                 <div class="gallery">
@@ -230,8 +238,163 @@
         </div>
         <div class="clearfix"></div>
     </section>
-
     <!-- Image Gallery End -->
+    <hr>
+    <!-- Ideals -->
+    <h3 class="center">Our Ideals</h3>
+    <section class="ideal-class">
+        <div class="ideal-gallery">
+
+            <div class="ideal-responsive">
+                <div class="card">
+                    <a class="ideal-img" target="_blank" href="https://rb.gy/am3k8"><img src="image/veersavarkar.jpg" alt="veersavarkar"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Veer Savarkar</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ideal-responsive">
+                <div class="card">
+                    <a class="ideal-img" target="_blank" href="https://rb.gy/cblnl"><img src="image/balasaheb.jpg" alt="balasaheb"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Balasaheb Thakre</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ideal-responsive">
+                <div class="card">
+                    <a class="ideal-img" target="_blank" href="https://rb.gy/i7tjl"><img src="image/anandDighe.jpg" 
+                    alt="anandDighe"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Anand Dighe</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- ideals end -->
+
+    <!-- Photo gallery -->
+    <h3 class="center">Gallery</h3>
+    <section class="portfolio" id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="photo-center">
+                    <button class="filter-button" data-filter="all">All</button>
+                    <button class="filter-button" data-filter="category1">Old Pitchers</button>
+                    <button class="filter-button" data-filter="category2">Articles</button>
+                    <button class="filter-button" data-filter="category3">Events</button>
+                </div>
+
+                <div class="gallery_product col-sm-4 col-xs-6 filter category1">
+                    <a class="fancybox" rel="ligthbox" href="image/oldimage/img1.jpg">
+                        <img class="img-responsive" alt="" src="image/oldimage/img1.jpg" />
+                        <div class='img-info'>
+                            <h4>Image Title 1</h4>
+                            <p>....</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-4 col-xs-6 filter category1">
+                    <a class="fancybox" rel="ligthbox" href="image/oldimage/img2.jpg">
+                        <img class="img-responsive" alt="" src="image/oldimage/img2.jpg" />
+                        <div class='img-info'>
+                            <h4>Image Title 2</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <a class="fancybox" rel="ligthbox" href="image/oldimage/img3.jpg">
+                        <img class="img-responsive" alt="" src="image/oldimage/img3.jpg" />
+                        <div class='img-info'>
+                            <h4>Image Title 3</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <a class="fancybox" rel="ligthbox" href="image/eventImage/img1.jpg">
+                        <img class="img-responsive" alt="" src="image/eventImage/img1.jpg"" />
+                        <div class='img-info'>
+                            <h4>Image Title 5</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <a class="fancybox" rel="ligthbox" href="image/eventImage/img2.jpg"">
+                        <img class="img-responsive" alt="" src="image/eventImage/img2.jpg"" />
+                        <div class='img-info'>
+                            <h4>Image Title 6</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <a class="fancybox" rel="ligthbox" href="image/eventImage/img3.jpg">
+                        <img class="img-responsive" alt="" src="image/eventImage/img3.jpg" />
+                        <div class='img-info'>
+                            <h4>Image Title 7</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <a class="fancybox" rel="ligthbox" href="image/Article/img.jpg">
+                        <img class="img-responsive" alt="" src="image/Article/img.jpg" />
+                        <div class='img-info'>
+                            <h4>Image Title 8</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <a class="fancybox" rel="ligthbox" href="image/Article/img.jpg">
+                        <img class="img-responsive" alt="" src="image/Article/img.jpg" />
+                        <div class='img-info'>
+                            <h4>Image Title 9</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <a class="fancybox" rel="ligthbox" href="image/Article/img.jpg">
+                        <img class="img-responsive" alt="" src="image/Article/img.jpg" />
+                        <div class='img-info'>
+                            <h4>Image Title 10</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <a class="fancybox" rel="ligthbox" href="image/Article/img.jpg">
+                        <img class="img-responsive" alt="" src="image/Article/img.jpg" />
+                        <div class='img-info'>
+                            <h4>Image Title 11</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Photo gallery end -->
+
 
 
     <!-- Footer -->
@@ -262,7 +425,7 @@
                 <div class="col-md-3 col-sm-6">
                     <h3>Media Resource</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="PressReleases.html">Press Releases</a></li>
                         <li><a href="photogallery.html">Photo Gallery</a></li>
                         <li><a href="media.html">Video Gallery</a></li>
                     </ul>
@@ -288,7 +451,9 @@
     </footer>
     <!-- Footer End -->
 
+
     <script src="JavaScript/slide.js"></script>
+    <script src="JavaScript/photoGallery.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
