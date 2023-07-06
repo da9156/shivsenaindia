@@ -7,8 +7,10 @@
   <title>Shivsena</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up.css' rel='stylesheet'>
-
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up.css' rel='stylesheet'>
+  <!-- font -->
   <link rel="icon" type="image/x-icon" href="image/shivsenaSymbol.png">
   <link rel="stylesheet" href="Css/slide.css">
   <link rel="stylesheet" href="Css/card.css">
@@ -19,7 +21,6 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-orange" id="home">
       <div class="container">
-
           <a href="index.html" class="navbar-brand">
               <img src="image/shivShenaLogo.png" alt="logo" height="80" width="80">
               <span class="shivsena-text">शिवसेना India</span>
@@ -33,10 +34,18 @@
                   <li class="nav-item">
                       <a class="nav-link" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="ourmp.html">Our M.Ps</a>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          For Voter
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="">Vision</a>
+                          <a class="dropdown-item" href="">Projects</a>
+                          <a class="dropdown-item" href="">Schemes</a>
+                          <a class="dropdown-item" href="">Mission</a>
+                      </div>
                   </li>
-
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,14 +57,47 @@
                           <a class="dropdown-item" href="media.html">Video Gallery</a>
                       </div>
                   </li>
+                  <div class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Party
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="">President</a>
+                          <a class="dropdown-item" href="ministers.html">Ministers</a>
+                          <li>
+                              <a class="dropdown-item" href="">Leadership &raquo;</a>
+                              <ul class="dropdown-menu dropdown-submenu">
+                                  <li><a class="dropdown-item" href="eknathshinde.html">Eknath Shinde Ji (C.M.)</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="rahulshewale.html">Rahul Shewale Ji</a></li>
+                                  <li><a class="dropdown-item" href="anandraoadsul.html">Anandrao Adsul Ji</a></li>
+                                  <li><a class="dropdown-item" href="">Udya Samant Ji</a></li>
+                                  <li><a class="dropdown-item" href="">Dipak Kesarkar Ji</a></li>
+                                  <li><a class="dropdown-item" href="drshrikant.html">Shrikant Shinde Ji</a></li>
+                                  <li><a class="dropdown-item" href="abhijit.html">Abhijit Adsul Ji</a></li>
+                                  <li><a class="dropdown-item" href="anshuman.html">Anshuman Joshi Ji</a></li>
+                              </ul>
+                          </li>
+                          <a class="dropdown-item" href="ourmp.html">MP</a>
+                          <a class="dropdown-item" href="mla.html">MLA</a>
+                          <li>
+                              <a class="dropdown-item" href="">About Shivsena &raquo;</a>
+                              <ul class="dropdown-menu dropdown-submenu">
+                                  <li><a class="dropdown-item" href="https://rb.gy/5glkd">History</a></li>
+                                  <li><a class="dropdown-item" href="ideology.html">Ideology</a></li>
+
+                          </li>
+                      </div>
+                  </div>
                   <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact us</a>
                   </li>
                   <li class="nav-item">
-                      <a class="btn btn-primary" href="form.html">Join Shivsena</a>
+                      <a class="btn" href="form.html">Join Shivsena</a>
                   </li>
                   <li class="nav-item">
-                      <a class="btn btn-primary" href="donation.html">Make a Donation</a>
+                      <a class="btn" href="donation.html">Make a Donation</a>
                   </li>
               </ul>
           </div>
@@ -68,8 +110,17 @@
       <div class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
       </div>
-      <div class="nav-item">
-          <a class="nav-link" href="ourmp.html">Our M.Ps</a>
+      <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              For Voter
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="">Vision</a>
+              <a class="dropdown-item" href="">Projects</a>
+              <a class="dropdown-item" href="">Schemes</a>
+              <a class="dropdown-item" href="">Mission</a>
+          </div>
       </div>
       <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -82,20 +133,35 @@
               <a class="dropdown-item" href="media.html">Video Gallery</a>
           </div>
       </div>
+      <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Party
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="">President</a>
+              <a class="dropdown-item" href="ministers.html">Ministers</a>
+              <a class="dropdown-item" href="ourmp.html">MP</a>
+              <a class="dropdown-item" href="mla.html">MLA</a>
+              <a class="dropdown-item" href="ideology.html">Ideology</a>
+              <a class="dropdown-item" href="https://rb.gy/5glkd">History</a>
+              <a class="dropdown-item" href="">About Shivsena</a>
+          </div>
+      </div>
       <div class="nav-item">
           <a class="nav-link" href="contact.html">Contact us</a>
       </div>
       <div class="nav-item">
-          <a class="margin btn-primary" href="form.html">Join Shivsena</a>
+          <a class="margin" href="form.html">Join Shivsena</a>
       </div>
       <div class="nav-item">
-          <a class="margin btn-primary" href="donation.html">Make a Donation</a>
+          <a class="margin" href="donation.html">Make a Donation</a>
       </div>
   </div>
   <!-- sidenav end -->
   <!-- Move to up button -->
   <div class="scroll-button">
-      <a href="#home" style="display: block;"><i class="gg-arrow-up"></i></a>
+    <a href="#home" style="display: block;"><i class="gg-arrow-up"></i></a>
   </div>
 
   <!-- card -->
@@ -111,7 +177,8 @@
               allowfullscreen></iframe>
             <div class="card-body">
               <h5 class="card-title">Eknath Shinde On Metro 3 Project</h5>
-              <p class="card-text">The trial run will be held inside a 3-km tunnel stretch between the temporary facility of Sariput Nagar and Marol Naka station.</p>
+              <p class="card-text">The trial run will be held inside a 3-km tunnel stretch between the temporary
+                facility of Sariput Nagar and Marol Naka station.</p>
               <a target="_blank" href="https://rb.gy/et7ro" class="btn btn-primary">Read About</a>
             </div>
           </div>
@@ -210,57 +277,73 @@
   <!-- card end -->
 
 
-  <!-- Footer -->
-  <footer class="bg-orange text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <h3>The Party</h3>
-          <ul class="list-unstyled">
-            <li><a target="_blank" href="https://rb.gy/5glkd">History of Shivshena</a></li>
-            <li><a href="ideology.html">Our Ideology</a></li>
-            <li><a href="#">Our Ministers in Maharashtra Government</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <h3>Leadership</h3>
-          <ul class="list-unstyled">
-            <li><a href="balasahebstory.html">Balashaheb Thackeray Ji</a></li>
-            <li><a href="ananddighe.html">Anand Dighe Ji</a></li>
-            <li><a href="eknathshinde.html">Eknath Shinde Ji</a></li>
-            <li><a href="rahulshewale.html">Rahul Shewale Ji</a></li>
-            <li><a href="anandraoadsul.html">Anandrao Adsul Ji</a></li>
-            <li><a href="drshrikant.html">Shrikant Shinde Ji</a></li>
-            <li><a href="abhijit.html">Abhijit Adsul Ji</a></li>
-            <li><a href="anshuman.html">Anshuman Joshi Ji</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <h3>Media Resource</h3>
-          <ul class="list-unstyled">
-            <li><a href="#">Press Releases</a></li>
-            <li><a href="photogallery.html">Photo Gallery</a></li>
-            <li><a href="media.html">Video Gallery</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <h3>Documents</h3>
-          <ul class="list-unstyled">
-            <li><a href="constitution.html">Constitution</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="text-center">
-            <img src="image/shivShenaLogo.png" alt="Shivshena Logo" width="100">
+    <!-- Footer -->
+    <footer class="bg-orange bgimg text-white py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6">
+                  <h3>The Party</h3>
+                  <ul class="list-unstyled">
+                      <li><a target="_blank" href="https://rb.gy/5glkd">History of Shivshena</a></li>
+                      <li><a href="ideology.html">Our Ideology</a></li>
+                      <li><a href="ministers.html">Our Ministers in Maharashtra Government</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <h3>Leadership</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="balasahebstory.html">Balashaheb Thackeray Ji</a></li>
+                      <li><a href="ananddighe.html">Anand Dighe Ji</a></li>
+                      <li><a href="eknathshinde.html">Eknath Shinde Ji (C.M.)</a></li>
+                      <li><a href="rahulshewale.html">Rahul Shewale Ji</a></li>
+                      <li><a href="anandraoadsul.html">Anandrao Adsul Ji</a></li>
+                      <li><a href="drshrikant.html">Shrikant Shinde Ji</a></li>
+                      <li><a href="abhijit.html">Abhijit Adsul Ji</a></li>
+                      <li><a href="anshuman.html">Anshuman Joshi Ji</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <h3>Media Resource</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="PressReleases.html">Press Releases</a></li>
+                      <li><a href="photogallery.html">Photo Gallery</a></li>
+                      <li><a href="media.html">Video Gallery</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <h3>Documents</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="constitution.html">Constitution</a></li>
+                  </ul>
+                  <h3>For Voter</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="">Vision</a></li>
+                      <li><a href="">Projects</a></li>
+                      <li><a href="">Schemes</a></li>
+                      <li><a href="">Mission</a></li>
+                  </ul>
+              </div>
           </div>
-          <div class="copy-text text-center mt-3">
-            <h4 class="copy-text">Shivsena India | &#169; 2023</h4>
+          <div class="row">
+              <div class="col-12">
+                  <div class="text-center">
+                      <img src="image/shivShenaLogo.png" alt="Shivshena Logo" width="100">
+                  </div>
+                  <div class="copy-text text-center mt-3">
+                      <h4 class="copy-text">Shivsena India | &#169; 2023</h4>
+                      <div class="socialMedia">
+                          <a href="https://www.facebook.com/mieknathshinde/"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://twitter.com/Shivsenaofc"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.instagram.com/mieknathshinde/?hl=en"><i
+                                  class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-whatsapp"></i></a>
+                          <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                          <a href="#"><i class="fab fa-youtube"></i></a>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </footer>
   <!-- Footer End -->
 

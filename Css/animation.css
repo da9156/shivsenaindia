@@ -10,7 +10,7 @@
     transition: all 1s ease-in-out;
     transform: translateX(140%);
     animation-name: shivsena;
-    animation-duration: 4s;
+    animation-duration: 7s;
     animation-iteration-count: 1;
 }
 
@@ -28,7 +28,7 @@
     opacity: 1;
     transition: opacity 0.2s ease-in;
     animation-name: initialLoading;
-    animation-duration: 2s;
+    animation-duration: 5s;
 }
 
 .final-img {
