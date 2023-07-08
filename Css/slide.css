@@ -79,6 +79,11 @@
   border-radius: 20px;
   background-color: none;
 }
+.sep::after{
+  content: ' ';
+  position: absolute;
+
+}
 
 @media (max-width: 767px) {
   .navbar-nav {
