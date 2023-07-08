@@ -22,10 +22,9 @@
 
 .image-gallery {
     width: 80%;
-    max-width: 1200px;
 }
 
-.responsive {
+.photo-responsive {
     width: 33.33%;
     padding: 5px;
     float: left;
@@ -275,23 +274,25 @@ header .close:hover {
 
 /* Mobile devices */
 @media screen and (max-width: 480px) {
-    .responsive {
+    .image-gallery{
         width: 100%;
-        float: none;
+    }
+    .photo-responsive {
+        width: 100%;
     }
 }
 
 /* Tablets and small desktop screens */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .responsive {
-        width: 50%;
+    .photo-responsive {
+        width: 65%;
         float: none;
     }
 }
 
 /* Larger desktop screens */
 @media screen and (min-width: 769px) {
-    .responsive {
+    .photo-responsive {
         width: 33.33%;
         float: left;
     }
